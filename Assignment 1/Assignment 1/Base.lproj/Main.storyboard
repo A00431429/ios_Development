@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g2W-0K-MyR">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="yxJ-DL-9Xr">
+            <objects>
+                <navigationController id="g2W-0K-MyR" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yIG-XN-zbS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vjU-de-JhD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vsT-sE-dMO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1099" y="19"/>
+        </scene>
+        <!--Game Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GameController" customModule="Assignment_1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSU-6F-jVy">
+                                <rect key="frame" x="112" y="571" width="198" height="30"/>
+                                <state key="normal" title="Click here to begin Quiz"/>
+                                <connections>
+                                    <action selector="alert:" destination="WWs-Am-taG" eventType="touchUpInside" id="jud-GC-FXl"/>
+                                    <segue destination="Cbd-da-7YN" kind="show" id="1Iq-7e-PVx"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Cheslea Football App " borderStyle="bezel" placeholder="Cheslea Football App " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sE7-Nn-o7y">
+                                <rect key="frame" x="20" y="260" width="374" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78915224320071464" green="0.87716890497235867" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="tSU-6F-jVy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="112" id="DwH-Am-zhR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tSU-6F-jVy" secondAttribute="bottom" constant="261" id="erz-dK-35A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tSU-6F-jVy" secondAttribute="trailing" constant="138" id="vf9-a9-M06"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WNn-t3-3ue"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="WWs-Am-taG" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-97.101449275362327" y="20.758928571428569"/>
+        </scene>
+        <!--Page1 Controller-->
+        <scene sceneID="Etr-Hs-DDD">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKJ-dm-6N3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Cbd-da-7YN" customClass="Page1Controller" customModule="Assignment_1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h0N-hM-00Q" customClass="Page1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="pEL-4d-Nw3">
+                                <rect key="frame" x="20" y="331" width="374" height="286"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3Z-lb-Z0W">
+                                        <rect key="frame" x="131" y="0.0" width="112" height="16"/>
+                                        <state key="normal" title="White Hart Lane"/>
+                                        <connections>
+                                            <action selector="Page1Answer:" destination="Cbd-da-7YN" eventType="touchUpInside" id="X0c-KQ-c8r"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" verticalCompressionResistancePriority="749" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQj-w4-gg5">
+                                        <rect key="frame" x="161" y="86" width="52" height="0.0"/>
+                                        <state key="normal" title="Anfield "/>
+                                        <connections>
+                                            <action selector="but2ans:" destination="Cbd-da-7YN" eventType="touchUpInside" id="tyz-B9-yvd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lg-VB-dRn">
+                                        <rect key="frame" x="129" y="156" width="116" height="30"/>
+                                        <state key="normal" title="Stamford Bridge "/>
+                                        <connections>
+                                            <action selector="but3ans:" destination="Cbd-da-7YN" eventType="touchUpInside" id="rNM-3h-Xc7"/>
+                                            <segue destination="oMP-dB-w41" kind="show" id="3Jx-J8-AVR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQA-ww-3LI" userLabel="Button4">
+                                        <rect key="frame" x="120" y="256" width="134" height="30"/>
+                                        <state key="normal" title="Molineaux Stadium "/>
+                                        <connections>
+                                            <action selector="but4ans:" destination="Cbd-da-7YN" eventType="touchUpInside" id="krH-N9-U5O"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Q1. Name of Chelsea Football Ground" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rnF-2J-GwV">
+                                <rect key="frame" x="76" y="157" width="263" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94776335705836834" green="1" blue="0.86038961252513713" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="pEL-4d-Nw3" firstAttribute="top" secondItem="btn-vh-AKQ" secondAttribute="top" constant="243" id="4WT-uQ-Jqh"/>
+                            <constraint firstItem="btn-vh-AKQ" firstAttribute="bottom" secondItem="pEL-4d-Nw3" secondAttribute="bottom" constant="245" id="6ZX-lp-eqQ"/>
+                            <constraint firstItem="btn-vh-AKQ" firstAttribute="trailing" secondItem="pEL-4d-Nw3" secondAttribute="trailing" constant="20" id="APd-aj-whq"/>
+                            <constraint firstItem="pEL-4d-Nw3" firstAttribute="leading" secondItem="h0N-hM-00Q" secondAttribute="leading" constant="20" id="QOe-Vg-dqk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="btn-vh-AKQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="r3Z-lb-Z0W" id="S9U-PP-YbK"/>
+                        <outlet property="button2" destination="OQj-w4-gg5" id="HCb-OU-Krb"/>
+                        <outlet property="button3" destination="8lg-VB-dRn" id="hnI-GF-rGH"/>
+                        <outlet property="button4" destination="rQA-ww-3LI" id="ssW-dZ-eJ6"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="628" y="19"/>
+        </scene>
+        <!--Page2 Controller-->
+        <scene sceneID="HNJ-Gc-9PY">
+            <objects>
+                <viewController id="oMP-dB-w41" customClass="Page2Controller" customModule="Assignment_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XiG-dJ-j1e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1905" minValue="1900" maxValue="1920" translatesAutoresizingMaskIntoConstraints="NO" id="2aL-0V-lFA">
+                                <rect key="frame" x="97" y="418" width="188" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderFunc:" destination="oMP-dB-w41" eventType="valueChanged" id="aVs-8v-f1e"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1900" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHz-Ya-ALg">
+                                <rect key="frame" x="46" y="454" width="39" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1920" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LR-aa-qEG">
+                                <rect key="frame" x="267" y="454" width="108" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nc8-AN-VhD">
+                                <rect key="frame" x="161" y="568" width="65" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.68622917995944022" green="0.91966821889437156" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Q2. When was the Football field establoished ?" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="grE-Cm-dgg">
+                                <rect key="frame" x="45" y="164" width="324" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Trx-8e-9oN">
+                                <rect key="frame" x="140" y="700" width="107" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Proceed">
+                                    <color key="titleColor" red="1" green="0.9948392184" blue="0.22749828750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="NRz-Jz-nmI" kind="show" id="6Np-VD-qkK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.80752539928716782" blue="0.96631977519631529" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="2l6-tf-jDw"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelfield" destination="nc8-AN-VhD" id="hX2-UH-rVu"/>
+                        <outlet property="slider" destination="2aL-0V-lFA" id="3qO-Rq-Ye2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CAN-rJ-pBN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1327.536231884058" y="20.758928571428569"/>
+        </scene>
+        <!--Page3 Controller-->
+        <scene sceneID="rtc-S3-uxg">
+            <objects>
+                <viewController storyboardIdentifier="Page3Controller" id="NRz-Jz-nmI" customClass="Page3Controller" customModule="Assignment_1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Page3Controller" id="q9d-on-cLm" customClass="Page3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="293-HZ-Rpy">
+                                <rect key="frame" x="86" y="399" width="242" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="WELCOME TO BLUE FAMILY "/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qss-uB-sPx">
+                                <rect key="frame" x="93" y="171" width="242" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="YOU WON "/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.47734612178771363" green="0.70824481478105317" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="Wi6-GM-g5d"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MqK-ia-kGV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2002.8985507246377" y="24.776785714285712"/>
+        </scene>
+    </scenes>
+</document>
